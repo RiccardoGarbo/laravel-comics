@@ -3,6 +3,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+        }
+    }
+
 }
 
 div.container {
@@ -36,18 +50,4 @@ div.container {
 h3 {
     color: white;
     padding: 1rem 0;
-}
-
-ul {
-    padding: 0;
-
-    li {
-        list-style: none;
-
-    }
-
-    a {
-        color: gray;
-        text-decoration: none;
-    }
 }

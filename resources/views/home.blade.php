@@ -38,12 +38,14 @@
                         <!--LINK DC COMICS-->
                         <h3>DC COMICS</h3>
                         <ul>
-                            <li>
-                                
+                            @foreach ($dc_comics_links as $link )                         
+                            <li><a href="#">{{$link}} </a>                                                         
                             </li>
+                            @endforeach
                         </ul>
                     </div>
                     <!--LINK SHOP-->
+
                     <div id="shop-links">
                         <h3>SHOP</h3>
                         <ul>
@@ -76,6 +78,8 @@
             </div>
         </div>
     </section>
+
+    <!--Final footer-->
     <footer>
         <div id="footer-end" class="container">
             <input type="button" value="SIGN-UP NOW!">

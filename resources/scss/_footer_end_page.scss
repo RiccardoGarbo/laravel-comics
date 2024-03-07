@@ -19,26 +19,26 @@ footer {
     gap: 15rem;
 
 
-}
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
 
 
-ul {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+        li {
+            list-style: none;
+        }
 
 
-    li {
-        list-style: none;
-    }
+        a {
+            color: white;
+            text-decoration: none;
 
-
-    a {
-        color: white;
-        text-decoration: none;
-
+        }
     }
 }
+
+
 
 #followUS {
     font-weight: 700;
