@@ -48,28 +48,32 @@
 
                     <div id="shop-links">
                         <h3>SHOP</h3>
-                        <ul>
-                            <li>
-                                
+                        <ul>@foreach ($shop_links as $link )                         
+                            <li><a href="#">{{$link}} </a>                                                         
                             </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
                 <!--LINK DC-->
                 <div id='dc'>
                     <h3>DC</h3>
-                    <ul>
-                        <li> 
+                    <ul>@foreach ($dc_links as $link )                         
+                        <li><a href="#">{{$link}} </a>                                                         
                         </li>
+                        @endforeach                      
                     </ul>
                 </div>
                 <!--LINK SITES-->
                 <div id="sites">
                     <h3>SITES</h3>
-                    <ul>
-                        <li>
-                           
+                    <ul>@foreach ($sites_links as $link )                         
+                        <li><a href="#">{{$link}} </a>                                                         
                         </li>
+                        @endforeach
+                       
+                           
+                       
                     </ul>
                 </div>
             </div>
