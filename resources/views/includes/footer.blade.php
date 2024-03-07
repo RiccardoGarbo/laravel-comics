@@ -57,7 +57,19 @@
             <ul>
                 <li id="followUS">FOLLOW US</li>
                 <li>
-
+                   <img src="{{vite::asset('resources/icon/footer-facebook.png') }}" alt=""> 
+                </li>
+                <li>
+                   <img src="{{vite::asset('resources/icon/footer-periscope.png') }}" alt=""> 
+                </li>
+                <li>
+                   <img src="{{vite::asset('resources/icon/footer-pinterest.png') }}" alt=""> 
+                </li>
+                <li>
+                   <img src="{{vite::asset('resources/icon/footer-twitter.png') }}" alt=""> 
+                </li>
+                <li>
+                   <img src="{{vite::asset('resources/icon/footer-youtube.png') }}" alt=""> 
                 </li>
             </ul>
         </div>
