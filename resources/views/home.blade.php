@@ -7,6 +7,6 @@
     <title>Document</title>
     @vite('resources/js/app.js')
 </head>
-<body>  
+<body>    
 </body>
-</html><
+</html>
