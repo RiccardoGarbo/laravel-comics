@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 //Rotta Home 
 Route::get('/', function () {
+    $header_links =['Characters','Comics','Movies','TV','Games','Videos','News','Shop'];
     $dc_comics_links = ['Characters','Comics','Movies','TV','Games','Videos','News'];
     $shop_links = ['Shop DC','Shop DC Collectibles'];
     $dc_links = ['Term Of Use', 'Privacy policy(New)','Ad Choices','Advertosing','Jobs','Subscriptions','Talent WorkShops','CPSC Certificates','Ratings','Shop Help','Contact Us'];
     $sites_links =['DC','MAD Magazine','DC kids','DC Universe','DC Power Visa'];
-    return view('home', ['dc_comics_links'=> $dc_comics_links,'shop_links'=> $shop_links,'dc_links'=> $dc_links,'sites_links'=>$sites_links]);
+    return view('home', ['header_links' =>$header_links,'dc_comics_links'=> $dc_comics_links,'shop_links'=> $shop_links,'dc_links'=> $dc_links,'sites_links'=>$sites_links]);
 })->name('home');
 //Rotta TV
 Route::get('/tv', function () {

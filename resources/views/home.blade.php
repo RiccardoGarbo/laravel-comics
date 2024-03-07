@@ -14,14 +14,17 @@
         <picture><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt=""></picture>
         <nav>
             <ul>
-                <li>
+                <li>@foreach ($header_links as $link )                         
+                    <li><a href="#">{{$link}} </a>                                                         
+                    </li>
+                    @endforeach
                 </li>
             </ul>
         </nav>
     </header>
     <!--JUMBOTRON-->
     <div>
-        <picture><img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt=""></picture>
+        <picture id="jumbotron"><img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt=""></picture>
     </div>
     <!--Section Main-->
     <section>
