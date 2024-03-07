@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 //Rotta Home 
 Route::get('/', function () {
-    $header_links =['Characters','Comics','Movies','TV','Games','Videos','News','Shop'];
+    $header_links =['characters','comics','movies','tv','games','videos','news','shop'];
     $dc_comics_links = ['Characters','Comics','Movies','TV','Games','Videos','News'];
     $shop_links = ['Shop DC','Shop DC Collectibles'];
     $dc_links = ['Term Of Use', 'Privacy policy(New)','Ad Choices','Advertosing','Jobs','Subscriptions','Talent WorkShops','CPSC Certificates','Ratings','Shop Help','Contact Us'];
@@ -24,17 +24,33 @@ Route::get('/', function () {
 //Rotta TV
 Route::get('/tv', function () {
     return view('tv');
-});
+})->name('tv');
 //Rotta GAMES
 Route::get('/games', function () {
     return view('games');
-});
+})->name('games');
 //Rotta MOVIES
 Route::get('/movies', function () {
     return view('movies');
-});
+})->name('movies');
+//Rotta characters
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
 //Rotta Comincs 
 Route::get('/comics', function () {
-    return view('comics.index');
-});
+    return view('comics');
+})->name('comics');
+//Rotta videos
+Route::get('/videos', function () {
+    return view('videos');
+})->name('videos');
+//Rotta News 
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
+//Rotta Shop
+Route::get('/shop', function () {
+    return view('shop');
+})->name('shop');
 
