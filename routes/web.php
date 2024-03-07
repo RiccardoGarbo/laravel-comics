@@ -12,7 +12,24 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//Rotta Home 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+//Rotta TV
+Route::get('/tv', function () {
+    return view('tv');
+});
+//Rotta GAMES
+Route::get('/games', function () {
+    return view('games');
+});
+//Rotta MOVIES
+Route::get('/movies', function () {
+    return view('movies');
+});
+//Rotta Comincs 
+Route::get('/comics', function () {
+    return view('comics.index');
+});
+
