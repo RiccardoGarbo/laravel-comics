@@ -101,11 +101,15 @@ Route::get('/shop', function () {
 //Rotta Comic
 
 Route::get('/comic/{index}' , function($index){
+    $header_links =['characters','comics','movies','tv','games','videos','news','shop'];
+    $dc_comics_links = ['Characters','Comics','Movies','TV','Games','Videos','News'];
+    $shop_links = ['Shop DC','Shop DC Collectibles'];
+    $dc_links = ['Term Of Use', 'Privacy policy(New)','Ad Choices','Advertosing','Jobs','Subscriptions','Talent WorkShops','CPSC Certificates','Ratings','Shop Help','Contact Us'];
+    $sites_links =['DC','MAD Magazine','DC kids','DC Universe','DC Power Visa'];
     $comics = config('comics');
     if (array_key_exists($index, $comics)) {
-        $comic = $comics[$index];
-        dd($comic);
-        return view('comics.show', compact('comic'));
+        $comic = $comics[$index];       
+        return view('comics.show', compact('comic'),['header_links' =>$header_links,'dc_comics_links'=> $dc_comics_links,'shop_links'=> $shop_links,'dc_links'=> $dc_links,'sites_links'=>$sites_links]);
     } else {
         abort(404); 
     }
