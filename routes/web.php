@@ -98,3 +98,17 @@ Route::get('/shop', function () {
     return view('shop', ['header_links' =>$header_links,'dc_comics_links'=> $dc_comics_links,'shop_links'=> $shop_links,'dc_links'=> $dc_links,'sites_links'=>$sites_links]);
 })->name('shop');
 
+//Rotta Comic
+
+Route::get('/comic/{index}' , function($index){
+    $comics = config('comics');
+    if (array_key_exists($index, $comics)) {
+        $comic = $comics[$index];
+        dd($comic);
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404); 
+    }
+})->name('comic.show');
+
+
