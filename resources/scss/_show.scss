@@ -1,0 +1,31 @@
+#show {
+    width: 1000px;
+    display: flex;
+    padding: 30px 0;
+
+
+    #description {
+        flex-basis: 65%;
+    }
+
+    #availability {
+        display: flex;
+        justify-content: space-between;
+        background-color: #55BA59;
+        padding: 10px 0;
+        margin: 10px 0;
+
+    }
+
+    button {
+        background-color: transparent;
+        color: white;
+        border: 0;
+
+    }
+
+    p {
+        line-height: 2rem;
+
+    }
+}
